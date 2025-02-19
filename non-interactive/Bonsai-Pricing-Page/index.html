@@ -12,8 +12,8 @@
         <nav>
             <p>bonsai</p>
             <ul class="headerList">
-                <li>Product</li>
-                <li>Templates</li>
+                <li>Product&#9660</li>
+                <li>Templates&#9660</li>
                 <li>Pricing</li>
                 <li>Reviews</li>
             </ul>
@@ -27,7 +27,7 @@
             <h1>Plans & Pricing</h1>
             <div class="toggleMode">
             <p>MONTHLY</p>
-                <button class="toggleButton" type="button"></button>
+                <button class="toggleButton" type="button"><span></span></button>
                 <p>YEARLY</p>
             </div>
         </section>
@@ -36,11 +36,11 @@
             <div>
                 <div>
                 <div class="workflow">
-                    <span>Workflow</span>
+                    <span class="wf">Workflow</span>
                     <span><span class="price">$19</span>/Month</span>
-                    <span class="line"></span>
                 </div>
-                <div>
+                <span class="line"></span>
+                <div class="feat">
                     <span>Unlimited Clients and Projects</span>
                     <span>Proposals</span>
                     <span>Contracts</span>
@@ -57,14 +57,14 @@
             <div>
                 <div>
                 <div class="workflow">
-                    <span>Workflow Plus</span>
+                    <span class="wf">Workflow Plus</span>
                     <span><span class="price">$29</span>/Month</span>
-                    <span class="line"></span>
                 </div>
-                <div>
+                <span class="line"></span>
+                <div class="feat">
                     <span>Everything in Workflow,plus...</span>
                     <span>White-labelled client experience</span>
-                    <span>Client forms and questionnaires</span>
+                    <span>Client forms and questionnaires<button class="new">New</button></span>
                     <span>Workflow automations</span>
                     <span>Subcontracting(auto-mode)</span>
                     <span>Calendly Integration</span>
@@ -119,22 +119,26 @@
         <section class="questions">
             <h4>Frequently Asked Questions</h4>
             <div>
-                <div class="dropdown">
-                    <span>How does the 14 day free trial work?</span>
-                    <button></button>
-                </div>
-                <div class="dropdown">
-                    <span>Can i change Plans anytime"</span>
-                    <button></button>
-                </div>
-                <div class="dropdown">
-                    <span>How do i pause my Bonsai subscription?</span>
-                    <button></button>
-                </div>
-                <div class="dropdown">
-                    <span>What is your Refund policy?</span>
-                    <button></button>
-                </div>
+                <form class="freeTrial">
+                    <label for="freeTrial">How does the 14 day free trial work?</label>
+                    <input type="checkbox" id="freeTrial">
+                    <p class="freeTrialText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore sit optio soluta? Et consequatur fugit vel quidem facere sit in, illo, molestias doloremque porro laboriosam aliquid ut esse consectetur neque excepturi, quos fuga laborum quia perferendis. Dicta, minus et quia possimus, dolore quasi assumenda voluptatum voluptatibus eveniet reiciendis sunt.</p>
+                </form>
+                <form class="changePlans">
+                    <label for="changePlans">Can i change plans anytime?</label>
+                    <input type="checkbox" name="changePlans" id="changePlans">
+                    <p class="changePlansText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti impedit aut praesentium at sequi magnam nisi quisquam ipsam aperiam, cupiditate rerum a deserunt id similique veritatis dignissimos omnis nam error officia eos? Cupiditate, dolorem eos enim saepe, repudiandae soluta facere cum quas expedita vero sequi quae, obcaecati sunt assumenda reiciendis.</p>
+                </form>
+                <form class="bonsaiSub">
+                    <label for="bonsaiSub">How do I pause my Bonsai subscription?</label>
+                    <input type="checkbox" name="bonsaiSub" id="bonsaiSub">
+                    <p class="bonsaiSubText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat, ullam tenetur asperiores corporis ex ipsa recusandae accusantium voluptatum eum eligendi blanditiis unde eveniet amet tempore aliquam animi maxime? Vero natus obcaecati eos iure eligendi culpa earum qui voluptas suscipit placeat! Culpa quas vero, animi adipisci veniam voluptate assumenda quis.</p>
+                </form>
+                <form class="refund">
+                    <label for="refund">What is your Refund Policy</label>
+                    <input type="checkbox" name="refund" id="refund">
+                    <p class="refundText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui tempore deserunt, illum ratione at magni a laboriosam quam beatae maiores, voluptate deleniti itaque veniam commodi vel totam, magnam optio nemo esse cumque quis voluptatibus ut sequi! Perferendis dicta voluptatibus, nobis dolorum numquam nulla eum, dolorem recusandae, aspernatur distinctio harum!</p>
+                </form>
             </div>
         </section>
      </main>
@@ -151,7 +155,7 @@
                 <li>Accounting</li>
                 <li>Bonsai Tax</li>
                 <li>Bonsai Cash</li>
-                <li class="green">Pricing</li>
+                <li class="green top">Pricing</li>
                 <li>Bonsai Reviews</li>
             </ul>
 
@@ -161,16 +165,16 @@
                 <li>Freelance Blog by Bonsai</li>
                 <li>How to write a Contract</li>
                 <li>Online Signature Maker</li>
-                <li>Self-Employed Taxes Hub</li>
+                <li class="top">Self-Employed Taxes Hub</li>
                 <li>Self-Employed Tax Calculator</li>
                 <li>Self-Employed Tax Deductions</li>
-                <li>Templates</li>
-                <li>Invoice Templates</li>
-                <li>Proposal Templates</li>
-                <li>Contract Templates</li>
-                <li>Agreement Templates</li>
-                <li>Scope of Work Templates</li>
-                <li>Quote Templates</li>
+                <li class="templates top">Templates</li>
+                <li>Invoice Templates&#9660</li>
+                <li>Proposal Templates&#9660</li>
+                <li>Contract Templates&#9660</li>
+                <li>Agreement Templates&#9660</li>
+                <li>Scope of Work Templates&#9660</li>
+                <li>Quote Templates&#9660</li>
                 <li>Credit Note Templates</li>
                 <li>Estimtate Templates</li>
             </ul>
@@ -184,9 +188,9 @@
                 <li>Twitter</li>
                 <li>Privacy policy</li>
                 <li>Legal</li>
-                <li>Affiliates</li>
+                <li class="top">Affiliates</li>
                 <li>Write for Us</li>
-                <li>Comparisons</li>
+                <li class="top">Comparisons&#9660</li>
             </ul>
     </footer>
     
