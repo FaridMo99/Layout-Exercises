@@ -47,6 +47,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--color3);
+    overflow-x: clip;
 }
 
 h1, h2, h3, h4 {
@@ -61,6 +62,18 @@ h1, h2, h3, h4 {
 li:hover {
     opacity:0.7;
     cursor: pointer;
+}
+
+.blueImg {
+    z-index: -1;
+    background-color: rgb(225, 243, 255);
+    width: 50vw;
+    height: 50vh;
+    transform: rotate(20deg);
+    border-radius: 3vw;
+    position: absolute;
+    right:-20vw;
+    top:-10vh;
 }
 /*header*/
 header {
