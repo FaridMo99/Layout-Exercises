@@ -12,19 +12,19 @@ body {
     flex-direction: column;
 }
 
-main>section {
+.firstSection, .thirdSection {
     width: 100%;
 }
+
 
 ul {
     list-style: none;
 }
 
-
-.new {
-    width:5vw;
-    height:3vh;
+h1, h2, h3, h4 {
+    margin:0;
 }
+
 /* header */
 
 header, footer {
@@ -60,6 +60,7 @@ header {
 
             li:hover {
                 opacity: 0.7;
+                cursor: pointer;
             }
 
             .shopping {
@@ -108,7 +109,7 @@ h1, h2 {
     color:var(--bannerFontColor);
 }
 
-#secondSection, .thirdSection, .fourthSection {
+.secondSection, .thirdSection, .fourthSection {
     color:var(--bannerAndFontColor);
 }
 
@@ -123,7 +124,6 @@ h1, h2 {
     h1 {
         text-align: center;
         font-size: 2.5rem;
-        margin-bottom: -1rem;
     }
 
     h2 {
@@ -154,4 +154,113 @@ h1, h2 {
 
 
     /* section 2 */
+
+.secondSection {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 1fr 10vh;
+    grid-template-columns:5vh 1fr 1fr 5vh;
+    gap:5%;
+    grid-template-areas: 
+    ". . . ."
+    ". a b ." 
+    ". c d ."
+    ". . . ."
+    ;
+}
+
+.product {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 2px 2px rgb(239, 239, 239);
+    }
+
+    .productDescription {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+
+}
+
+.pic {
+    background-color:rgba(163, 163, 163, 0.352);
+    width:100%;
+    height: 80%;
+}
+
+.preorderBanner {
+    background-color: var(--bannerFontColor);
+    border-radius: 1px;
+    width:10%;
+    height: 10%;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    left: 80%;
+    top:10%;
+}
+
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+    /* section 3 */
+
+.thirdSection{
+    background-image:url(christian-wiediger-WkfDrhxDMC8-unsplash.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+/* section 4 */
+
+.fourthSection {
+    display: grid;
+    grid-template-columns: 5vh 1fr 1fr 5vh;
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 10vh ;
+    grid-template-areas: ;
+}
 
