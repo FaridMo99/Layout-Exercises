@@ -318,8 +318,43 @@ h5 {
 
 footer {
     height:33vh;
+    display: flex;
+    justify-content: space-around;
 
     ul li:first-child {
         font-weight: bold;
+        margin-bottom: 3vh;
     }
+
+    ul li {
+        margin-bottom:1vh ;
+    }
+}
+
+input[type="email"] {
+    background-color: var(--bannerAndFontColor);
+    border: 1px solid var(--bannerFontColor);
+    color:var(--bannerFontColor);
+    width: 40%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    border:none;
+    background-color:var(--bannerFontColor);
+    color:var(--bannerAndFontColor);
+    border-radius: 5vw;
+    margin-left: 1vw;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.socials {
+    margin-top: 1vh;
 }
